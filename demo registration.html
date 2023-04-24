@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration</title>
+<link rel="stylesheet" href="css/bootstrap.css"></link>
+<style>
+  #frm{
+     width:500px;
+     margin:auto;
+     margin-top:20px;
+  }
+  marquee{
+     margin-top:10px;
+  }
+  
+</style>
+<div class="container">  
+        <div align="right">       
+      <p><img  id="output" width="200"/ align="right"></p>
+      <input type ="file" accept="image/*" onchange="loadFile(event)" align="bottom ">
+      <script>
+          var loadFile = function(event) {
+              var image = document.getElementById('output'); 
+              image.src=URL.createObjectURL(event.target.files[0]);
+          };
+      </script > 
+      </div>
+</head>
+<body class="container-fluid">
+    <marquee><h2 class="text-primary">Register Here</h2></marquee>
+    <form action="RegisterServlet2" method="post" class="form card" id="frm">
+    
+        <h2 class="bg-primary text-white card-header">Registration Form</h2>
+        <table class="table table-hover">
+        <tr>
+        <td>Employee Code</td>
+        <td><input type="text" name="ec" required></td>
+        </tr>
+        <tr>
+         <td>Name</td>
+         <td><input type="text" name="userName" required></td>
+        </tr>
+        <tr>
+         <td>Email</td>
+        <td><input type="email" name="email" required></td>
+        </tr>
+        <tr>
+        <td>Date Of Birth</td>
+        <td><input type="date" name="dob" required></td>
+        </tr>
+        <tr>
+         <td>Gender</td>
+        <td><input type="radio" name="gender" value="male">Male &nbsp;
+            <input type="radio" name="gender" value="female">Female
+        </td>
+        </tr>
+        <tr>
+         <td>Mobile</td>
+        <td><input type="text" name="mobile" required></td>
+        </tr>
+        <tr>
+         <td>Father Name</td>
+        <td><input type="text" name="fathername" required></td>
+        </tr>
+        <tr>
+         <td>Mother Name</td>
+        <td><input type="text" name="mothername" required></td>
+        </tr>
+         
+        <tr>
+         <td>Address</td>
+        <td><input type="text" name="address" required></td>
+        </tr>
+        <tr>
+         <td>City</td>
+         <td><select name="city">
+         
+         	<option value="Agra">Agra</option>
+            <option value="pune">Pune</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Hydrabad">Hydrabad</option>
+         </select></td>
+        </tr>
+        <tr>
+         <td>State</td>
+         <td><select name="state">
+         	<option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Rajstan">Rajstan</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="AAndhra Pradesh">AAndhra Pradesh</option>
+            <option value="Sikkim">Sikkim</option>
+         </select></td>
+        </tr>
+        <tr>
+         <td>Pincode</td>
+        <td><input type="text" name="pincode" required></td>
+        </tr>
+        <tr>
+        <td>Date Of Joining</td>
+        <td><input type="date" name="doj" required></td>
+        </tr>
+        <tr>
+         <td>Salary Head Name</td>
+        <td><input type="text" name="shn1" required></td>
+        </tr>
+        <tr>
+         <td>Salary Head Name</td>
+         <td><input type="text" name="shn2" required></td>
+        </tr>
+        <tr>
+         <td>Salary Head Name</td>
+         <td><input type="text" name="shn3" required></td>
+        </tr>
+        <tr>
+         <td>Total Salary</td>
+         <td><input type="text" name="ts" required></td>
+        </tr>
+        <tr>
+         <td>Provident Fund</td>
+         <td><input type="text" name="pf" required></td>
+        </tr>
+        <tr>
+        <td>Esi</td>
+        <td><input type="text" name="esi" required>
+        </td>
+        </tr>
+        <tr>
+         <td>Document Type</td>
+         <td><select name="dt">
+         	<option value="AAdhar Card">AAdhar Card</option>
+            <option value="Pan Card">Pan Card</option>
+            <option value="Voter Card">Voter Card</option>
+            <option value="Ration Card">Ration Card</option>
+            <option value="Result Card">Result Card</option>
+         </select></td>
+        </tr>
+        
+        <tr class="card-footer">
+        <td><button type="submit" class="btn btn-outline-success">Register</button></td>
+        <td><button type="reset" class="btn btn-outline-danger">cancel</button></td>
+        </tr>
+        </table>  Do you have an account ?
+      	<a href="try.html">login here</a>
+        <button class="btn btn-outline-success d-block"><a href="ShowUserServlet2">Show Users</a></button>
+    </form>
+</body>
+</html>

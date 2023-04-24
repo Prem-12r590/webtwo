@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="ISO-8859-1">
+<title></title>
+<link rel="stylesheet" href="css/bootstrap.css"></link>
+<style>
+
+  #frm{
+     width:500px;
+     margin:auto;
+     margin-top:8px;
+  }
+  marquee{
+     margin-top:10px;
+  }
+  
+</style>
+
+</head>
+
+<body class="container-fluid">
+    <marquee><h2 class="text-primary">PAYROLL</h2></marquee>
+    <form action="SalaryHeadServlet" method="post" class="form card" id="frm">
+    
+        <h2 class="bg-primary text-white card-header">Salary Head Form</h2>
+        <table class="table table-hover">
+        <tr>
+        <td>Head Id</td>
+        <td><input type="text" name="headid" required></td>
+        </tr>
+        <tr>
+         <td>Head Name</td>
+         <td><input type="text" name="headname" required></td>
+        </tr>
+        <tr>
+         <td>seq</td>
+        <td><input type="text" name="seq" required></td>
+        </tr>
+        <tr>
+        <td>Active</td>
+        <td><input type="checkbox" name="active" value="1"></td>
+        </tr>
+        <tr class="card-footer">
+        <td><button type="submit" class="btn btn-outline-success">Save</button></td>
+        <td><button type="reset" class="btn btn-outline-danger">cancel</button></td>
+        </tr>
+        </table>  Do you have an account ?
+      	<a href="success.html">Back to Admin Theme</a>
+        <button class="btn btn-outline-success d-block"><a href="ShowSalaryHeadServlet">Show Salary Head</a></button>
+    </form>
+</body>
+</html>

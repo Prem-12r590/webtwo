@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>ADD DATA</title>
+<link rel="stylesheet" href="css/bootstrap.css"></link>
+<style>
+
+  #frm{
+    width:500px;
+     margin:auto;
+     margin-top:10px;
+  }
+  marquee{
+     margin-top:10px;
+  }
+  
+</style>
+
+</head>
+<body class="container-fluid">
+
+    <marquee><h2 class="text-info"><u><i><p style="color:red;">Add Here</p></i></u></h2></marquee>
+    <form action="ADDServlet" method="post" class="form card" id="frm">
+     
+        <h2 class="bg-primary text-white card-header"><center><u><I>PAYROLL</I></u></center></h2>
+        <table class="table table-hover">
+     													   
+        <tr>
+         <td><p style="color:red;">Employee</p></td>
+         <td><select name="employee">
+         	<option value="0">Select</option>
+         	<option value="Shivam">Shivam</option>
+            <option value="Lavkush">Lavkush</option>
+            <option value="Rakesh">Rakesh</option>
+            <option value="Ankit">Ankit</option>
+            <option value="Mayank">Mayank</option>
+         </select></td>
+        </tr>
+        <tr>
+         <td><p style="color:green;">Salary Head</p></td>
+         <td><select name="salaryhead">
+         	<option value="0">Select</option>
+         	<option value="BASIC">BASIC</option>
+            <option value="HRA">HRA</option>
+            <option value="HMA">HMA</option>
+            <option value="CONV">CONV</option>
+            <option value="OTHERS">OTHERS</option>
+         </select></td>
+        </tr>
+        <tr>
+        <td><p style="color:indigo;">Payment</p></td>
+         <td><input type="text" name="payment" required></td>
+                <tr class="card-footer">
+        <td><button type="submit" class="btn btn-outline-success">Add</button></td>
+        <td><button type="reset" class="btn btn-outline-danger">cancel</button></td>
+        </tr>        
+        </table>
+        <button class="btn btn-outline-success d-block"><a href="ShowESServlet">Show Users</a></button>
+    </form>
+</body>
+</html>

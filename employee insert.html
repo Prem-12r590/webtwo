@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee</title>
+<link rel="stylesheet" href="css/bootstrap.css"></link>
+<style>
+  #frm{
+     width:500px;
+     margin:auto;
+     margin-top:2px;
+  }
+  marquee{
+     margin-top:2px;
+  }
+  
+</style>
+<div class="container">  
+       
+      </div>
+</head>
+<body class="container-fluid">
+    <marquee><h2 class="text-primary">Employee Here</h2></marquee>
+    <form action="EmployeeInsertServlet" method="post" class="form card" id="frm">    
+        <h2 class="bg-primary text-white card-header">Employee Form</h2>
+        <table class="table table-info table-hover">
+        <tr>
+        <td>Employee Id</td>
+        <td><input type="text" name="empid" required></td>
+        </tr>
+        <tr>
+         <td>Emplocode</td>
+         <td><input type="text" name="emplocode" required></td>
+        </tr>
+        <tr>
+         <td>Name</td>
+         
+        <td><input type="text" name="name" required></td>
+        </tr>
+        <tr>
+        <td>Father Name</td>
+        <td><input type="text" name="fathername" required></td>
+        </tr>
+        <tr>
+         <td>Mother Name</td>
+        <td><input type="text" name="mothername" required>
+        </td>
+        </tr>
+        <tr>
+         <td>DOB</td>
+        <td><input type="date" name="dob" required></td>
+        </tr>
+        <tr>
+         <td>Address</td>
+        <td><input type="text" name="address" required></td>
+        </tr>
+        <tr>
+         <td>City</td>
+         <td><select name="city">
+         
+         	<option value="Agra">Agra</option>
+            <option value="pune">Pune</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Hydrabad">Hydrabad</option>
+         </select></td>
+        </tr>
+        <tr>
+         <td>State</td>
+         <td><select name="state">
+         	<option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Rajstan">Rajstan</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="AAndhra Pradesh">AAndhra Pradesh</option>
+            <option value="Sikkim">Sikkim</option>
+         </select></td>
+        </tr>
+        <tr>
+         <td>Pincode</td>
+        <td><input type="text" name="pincode" required></td>
+        </tr>
+        <tr>
+        <td>DOJ</td>
+        <td><input type="date" name="doj" required></td>
+        </tr>
+        <tr>
+         <td>Pfamount</td>
+        <td><input type="text" name="pfamount" required></td>
+        </tr>
+        <tr>
+         <td>ESI</td>
+         <td><input type="text" name="esi" required></td>
+        </tr>
+        <tr>
+         <td>Imgurl</td>
+         <td><input type="text" name="imgurl" required></td>
+        </tr>
+        <tr>
+        <td>WStatus</td>
+        <td><input type="checkbox" name="wstatus" value="working"></td>
+        <tr class="card-footer">
+        <td><button type="submit" class="btn btn-outline-success">Save</button></td>
+        <td><button type="reset" class="btn btn-outline-danger">cancel</button></td>
+        </tr>
+        </table>  Do you have an account ?
+      	<a href="success.html">Back to Admin Theme</a>
+        <button class="btn btn-outline-success d-block"><a href="ShowEmployeeServlet">Show Employee</a></button>
+    </form>
+</body>
+</html>

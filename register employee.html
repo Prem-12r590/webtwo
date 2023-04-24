@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+    lebel{
+      width:100px;
+      display:inline-block;
+    }
+    #form{
+      border-radius: 10px;
+    }
+    
+         
+h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+table, th, td {
+  border:1px solid black;
+}
+body {
+  background-color: CYAN;
+</style>
+
+<meta charset="UTF-8">
+<title>EMPLOYEE REGISTRATION FORM</title>
+</head>
+<body>
+<form name="myf" action="RegistrationServlet" method="get">
+<h1>
+<form>
+<u><center>Employee Registration</center></u>
+<hr color="black" width="100%" size="1">
+</h1>
+<H2 style="background-color:PINK:"><u>PERSONAL PROFILE</u></H2>
+
+<style type="text/css">
+    lebel{
+      width:100px;
+      display:inline-block;
+    }
+    #form{
+      border-radius: 10px;
+    }
+  </style>
+        <div class="container">  
+        <div align="right">       
+      <p><img  id="output" width="200"/ align="right"></p>
+      <input type ="file" accept="image/*" onchange="loadFile(event)" align="bottom ">
+      <script>
+          var loadFile = function(event) {
+              var image = document.getElementById('output'); 
+              image.src=URL.createObjectURL(event.target.files[0]);
+          };
+      </script >  
+    </div>
+           <table style="width:20%">
+  <tr>
+            <lebel>EMPLOYEE CODE:</lebel>
+            <input type="text" placeholder="Enter Code" name="empcode" required><br><br><br>
+            <lebel>NAME:</lebel>
+            <input type="text" placeholder="Enter The Name" name="name" required><br><br>         
+            <lebel>FATHER NAME:</lebel>
+            <input type="text" placeholder="Enter The Name" name="fathername" required><br><br>
+            <lebel>MOTHER NAME:</lebel>
+            <input type="text" placeholder="Enter The Name" name="mothername" required><br><br>
+            <lebel>DATE OF BIRTH:</lebel>
+            <input type="text" placeholder="Enter The Dob" name="dob" required><br><br>
+            <lebel>ADDRESS:</lebel>
+            <input type="text" placeholder="Enter The Address" name="address" required><br><br>
+            <lebel>CITY: </lebel>
+            <input type="text" placeholder="Enter City" name="city" required><br><br>
+            <lebel>STATE:</lebel>
+            <input type="text" placeholder="Enter State" name="state" required><br><br>
+            <lebel>PINCODE:</lebel>
+            <input type="text" placeholder="Enter Pincode" name="pincode" required><br><br>
+            <lebel>DATE OF JOINING:</lebel>
+            <input type="text" placeholder="Enter Doj" name="doj" required><br><br>
+			<h2 style="background-color:YELLOW;"><u>SALARY STRUCTURE</u></h2>            
+            <lebel>SALARY HEAD NAME:</lebel>
+            <input type="text" placeholder="Enter shn1" name="shn1" required><br><br>
+            <lebel>SALARY HEAD NAME:</lebel>
+            <input type="text" placeholder="Enter shn2" name="shn2" required><br><br>
+            <lebel>SALARY HEAD NAME:</lebel>
+            <input type="text" placeholder="Enter shn3" name="shn3" required><br><br>
+ 			<lebel>TOTAL SALARY:</lebel>
+ 			<input type="text" placeholder="Enter Total Salary" name="totalsalary" required><br><br>
+            <H2 style="background-color:RED;"><u>GOVERMENT FORMS</u></H2>
+            <hr color="black" width="100%" size="1">
+            <lebel>PROVIDENT FUND:</lebel>
+            <input type="text" placeholder="Enter pf" name="pf" required><br><br>
+            <lebel>ESI:</lebel>
+            <input type="text" placeholder="Enter Esi" name="esi" required><br><br>
+            </tr>
+            </table>
+           
+</label>   
+<input type="submit" value="save">
+<input type="reset" value="clear">
+</form>
+</body>
+</html>
